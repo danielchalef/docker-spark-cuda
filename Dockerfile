@@ -43,8 +43,8 @@ RUN apt-get --no-install-recommends -y --force-yes install openjdk-7-jre \
 							python3-dev \
 							cuda
 
-ENV LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-7.0/lib64
-ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/jre/
-ENV PATH=$PATH:/usr/local/cuda-7.0/bin
+ENV LIBRARY_PATH $LD_LIBRARY_PATH:/usr/local/cuda-7.0/lib64
+ENV JAVA_HOME /usr/lib/jvm/java-7-openjdk-amd64/jre/
+ENV PATH $PATH:/usr/local/cuda-7.0/bin
 
 CMD /bin/bash
